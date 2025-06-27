@@ -21,6 +21,19 @@ public:
 
     void OnResize(int width, int height) override;
 
+    BoxObject* MakePlanet(ComPtr<ID2D1Bitmap1>& bitmap, Vec2 position, float rotationSpeed, BoxObject* parent = nullptr)
+    {
+		BoxObject* planet = new BoxObject(bitmap);
+		if (parent)
+		{
+			planet->SetParent(parent);
+		}
+		planet->SetPosition(position);
+        planet->SetRotationSpeed(rotationSpeed);
+		m_BoxObjects.push_back(planet);
+		return planet;
+    };
+
 protected:
     void ProcessKeyboardEvents() override;
 
