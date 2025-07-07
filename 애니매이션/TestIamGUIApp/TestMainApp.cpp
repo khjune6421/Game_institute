@@ -145,7 +145,8 @@ void TestMainApp::UpdateLogic()
 
     if (m_selectedAssetKey.empty()) return; // 선택된 애셋 키가 비어있으면 리턴
 
-    static const AnimationClips& clips = m_AssetManager.GetClips(m_selectedAssetKey);
+    const AnimationClips& m_clips = m_AssetManager.GetClips(m_selectedAssetKey);
+    clips = m_clips; // 현재 애니메이션 클립 저장
 
     if (clips.empty()) return; // 클립이 없으면 리턴
 

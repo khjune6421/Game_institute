@@ -62,4 +62,6 @@ private:
 
     bool m_showFolderPanel = false;
     bool m_bChangedFile = false;
+
+    std::vector<std::pair<std::string, AnimationClip>> clips;
 };

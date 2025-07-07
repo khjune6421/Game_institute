@@ -28,7 +28,6 @@ void AssetManager::LoadAseprite(sample::D2DRenderer* d2dContext, const std::wstr
     {
         clip.second.SetBitmap(bitmap);
     }
-
     m_clipsMap[key] = std::move(clips);
 }
 

@@ -16,6 +16,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestIamGUIApp", "TestIamGUI
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImGUIDX11", "ImGUIDX11\ImGUIDX11.vcxproj", "{9865DBC1-DD57-425E-A982-6B4A3F216D07}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestStatePattern", "TestStatePattern\TestStatePattern.vcxproj", "{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -74,6 +76,18 @@ Global
 		{9865DBC1-DD57-425E-A982-6B4A3F216D07}.Release|x64.Build.0 = Release|x64
 		{9865DBC1-DD57-425E-A982-6B4A3F216D07}.Release|x86.ActiveCfg = Release|Win32
 		{9865DBC1-DD57-425E-A982-6B4A3F216D07}.Release|x86.Build.0 = Release|Win32
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.Debug|x64.ActiveCfg = Debug|x64
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.Debug|x64.Build.0 = Debug|x64
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.Debug|x86.ActiveCfg = Debug|Win32
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.Debug|x86.Build.0 = Debug|Win32
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.DebugNoSwapChain|x64.ActiveCfg = Debug|x64
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.DebugNoSwapChain|x64.Build.0 = Debug|x64
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.DebugNoSwapChain|x86.ActiveCfg = Debug|Win32
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.DebugNoSwapChain|x86.Build.0 = Debug|Win32
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.Release|x64.ActiveCfg = Release|x64
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.Release|x64.Build.0 = Release|x64
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.Release|x86.ActiveCfg = Release|Win32
+		{EDA1FBD8-A50D-4DF0-8992-2E1D6E1904DC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
