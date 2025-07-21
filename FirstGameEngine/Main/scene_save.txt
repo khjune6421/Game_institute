@@ -1,0 +1,13 @@
+ObjectCount: 3
+ObjectId: 0
+Transform: x=0, y=0, scaleX=1, scaleY=1, rotation=0
+SpriteAnimator: elapsedTime=738.658, isLoop=true
+
+ObjectId: 1
+Transform: x=0, y=0, scaleX=1, scaleY=1, rotation=0
+SpriteAnimator: elapsedTime=66.0979, isLoop=true
+
+ObjectId: 2
+Transform: x=110, y=220, scaleX=1, scaleY=1, rotation=0
+SpriteAnimator: elapsedTime=945.271, isLoop=true
+
