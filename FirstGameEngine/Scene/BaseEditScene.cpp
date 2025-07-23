@@ -267,7 +267,7 @@ void BaseEditScene::FolderPanel(bool* pShowPanel)
 			{
 				SpriteAnimator newSprite;
 				newSprite.SetClips(&clips);
-				newSprite.SetCurrentClip(clipIndex);
+				newSprite.SetCurrentClip("TagEat");
 				m_pObjectManager->AddSpriteAnimator(newObjectId, newSprite);
 			}
 

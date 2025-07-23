@@ -65,6 +65,7 @@ public:
 	const AnimationClips* GetClips() const { return m_clips; }
 
 	void SetCurrentClip(unsigned int index);
+	void SetCurrentClip(const string& name);
 	const AnimationClip* GetCurrentClip() const;
 
 	void SetLoop(bool loop) { m_isLoop = loop; }

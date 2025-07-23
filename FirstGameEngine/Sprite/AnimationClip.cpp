@@ -3,15 +3,36 @@
 
 void SpriteAnimator::SetCurrentClip(unsigned int index)
 {
-	if (m_clips && index < m_clips->size())
+	if (m_clips && !m_clips->empty() && index < m_clips->size())
 	{
 		m_clip = &(*m_clips)[index].second;
 		clipIndex = index;
 	}
-	else
+	else if (m_clips && !m_clips->empty())
 	{
 		m_clip = &(*m_clips)[0].second;
 		clipIndex = 0;
+	}
+	else
+	{
+		m_clip = nullptr;
+		clipIndex = 0;
+	}
+}
+
+void SpriteAnimator::SetCurrentClip(const string& name)
+{
+	if (!m_clips || m_clips->empty()) throw std::runtime_error("애니메이션 클립이 비어있음.");
+
+	auto it = find_if(m_clips->begin(), m_clips->end(), [&name](const pair<string, AnimationClip>& clip) { return clip.first == name; });
+	if (it != m_clips->end())
+	{
+		m_clip = &it->second;
+		clipIndex = static_cast<unsigned int>(distance(m_clips->begin(), it));
+	}
+	else
+	{
+		throw std::runtime_error("해당 이름의 애니메이션 클립을 찾을 수 없음.");
 	}
 }
 
